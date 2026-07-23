@@ -1,0 +1,49 @@
+aid: atb-financial
+url: https://raw.githubusercontent.com/api-evangelist/atb-financial/refs/heads/main/apis.yml
+name: ATB Financial
+kind: company
+description: >-
+  ATB Financial (formerly Alberta Treasury Branches) is a financial institution
+  and Crown corporation wholly owned by the Government of Alberta, established in
+  1938 and operating under the provincial ATB Financial Act rather than the
+  federal Bank Act. Headquartered in Edmonton, it is Alberta's largest
+  home-grown financial institution and the largest public bank in North America,
+  with roughly C$64 billion in assets, more than 800,000 customers, about 5,000
+  team members, and 300+ branches and agencies across the province; deposits are
+  guaranteed by the Province of Alberta rather than covered by CDIC. On the
+  open-finance front, ATB does NOT operate a public first-party developer portal
+  or documented public API surface (developer.atb.com returns HTTP 404), and
+  Canada's federal Consumer-Driven Banking framework (legislated in Budget 2024
+  and the Fall Economic Statement 2024, with the FCAC as overseer) is not yet
+  operational. Consumer financial-data access to ATB today is therefore
+  voluntary and aggregator-mediated — reached through third-party aggregators
+  such as Finicity (by Mastercard) and Flinks rather than a direct bank API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Alberta
+- Crown Corporation
+- Public Bank
+- Data Aggregation
+- Open Banking
+- Consumer-Driven Banking
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.atb.com
+- type: About
+  url: https://www.atb.com/about/
+- type: Blog
+  url: https://www.atb.com/personal/good-advice/
+- type: GitHubOrganization
+  url: https://github.com/ATBFinancial
+- type: LinkedIn
+  url: https://www.linkedin.com/company/atb-financial
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

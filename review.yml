@@ -1,0 +1,97 @@
+aid: atb-financial
+name: ATB Financial
+review:
+  question: Does ATB Financial expose a public first-party developer portal or documented public API?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    ATB Financial does not operate a public first-party developer portal and
+    publishes no documented public API surface. Probing the conventional
+    developer host developer.atb.com returned HTTP 404, and other candidate
+    hosts (developers.atb.com, api.atb.com, www.atb.com/developer, atb.com/api)
+    returned no discoverable developer content (DNS failure, 403, or 404). No
+    downloadable OpenAPI/Swagger specification was found, so no spec was
+    harvested into openapi/.
+
+    ATB is a Crown corporation wholly owned by the Government of Alberta,
+    chartered under the provincial ATB Financial Act rather than the federal
+    Bank Act; its deposits are guaranteed by the Province of Alberta instead of
+    CDIC. As a provincial public bank it is not one of Canada's federally
+    regulated Big Six and does not run the kind of commercial/corporate API
+    ecosystem that RBC, Scotiabank, CIBC, BMO, TD, or National Bank of Canada
+    publish.
+
+    Canada has no operational open-banking mandate. The federal Consumer-Driven
+    Banking framework (Budget 2024 + Fall Economic Statement 2024, with the
+    Financial Consumer Agency of Canada / FCAC as overseer) is legislated but
+    not yet live, so data access remains voluntary and fragmented. Consequently,
+    consumer financial-data access to ATB today is aggregator-mediated rather
+    than first-party: ATB is a supported institution for Finicity (a Mastercard
+    company) and is listed as a supported connection by the Canadian aggregator
+    Flinks. No first-party FDX endpoint or stated 1033-style data-access API is
+    published by ATB. ATB maintains a GitHub organization (github.com/ATBFinancial,
+    HTTP 200) with zero public repositories at the time of review.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalURL: ''
+    downloadableOpenAPI: false
+    specProvenance: none
+    fdxParticipant: false
+    section1033Posture: not-applicable
+    consumerDrivenBankingPosture: no published position; federal framework legislated but not operational
+    aggregatorOnly: true
+    aggregators:
+      - Finicity (Mastercard)
+      - Flinks
+    authModel: none-published
+    charter: Provincial Crown corporation (Government of Alberta), ATB Financial Act
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API is documented for ATB Financial.
+    - protocol: FDX
+      scheme: https
+      documented: false
+      note: No first-party FDX data-access API is published; the Canadian Consumer-Driven Banking framework is not yet operational.
+  urlsProbed:
+    - url: https://developer.atb.com
+      status: 404
+    - url: https://developers.atb.com
+      status: 000
+      note: DNS/connection failure.
+    - url: https://api.atb.com
+      status: 403
+    - url: https://www.atb.com/developer
+      status: 404
+    - url: https://atb.com/api
+      status: 404
+    - url: https://www.atb.com
+      status: 200
+    - url: https://github.com/ATBFinancial
+      status: 200
+      note: Organization exists with 0 public repositories.
+sources:
+  - url: https://www.openbankingtracker.com/provider/atb-financial
+    type: Reference
+    note: States no API products are listed for ATB Financial; identifies Flinks as an aggregator supporting ATB.
+  - url: https://fintable.io/coverage/banks/Canada/4230_atb-financial
+    type: Reference
+    note: Documents ATB Financial transaction-data coverage via Finicity aggregation.
+  - url: https://en.wikipedia.org/wiki/ATB_Financial
+    type: Reference
+    note: Charter type (Alberta Crown corporation), size (~C$64B assets, 800k+ customers), and Alberta-guaranteed deposits.
+  - url: https://www.atb.com/about/
+    type: Website
+    note: Institution identity and profile.
+actions:
+  openapiHarvested: false
+  reason: |
+    No public developer portal and no downloadable OpenAPI/Swagger specification
+    exist for ATB Financial. This is an honest identity-only (built-stub) record:
+    a provincial Crown-corporation public bank whose consumer data access is
+    available only through third-party aggregators (Finicity, Flinks), with no
+    first-party API, no FDX endpoint, and no operational Canadian open-banking
+    mandate to expose one.
