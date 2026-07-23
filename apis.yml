@@ -34,12 +34,20 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/atb-financial-domain-security.yml
+- type: LLMsTxt
+  url: llms/atb-financial-llms.txt
 - type: Website
   url: https://www.atb.com
 - type: About
   url: https://www.atb.com/about/
 - type: Blog
   url: https://www.atb.com/personal/good-advice/
+- type: PrivacyPolicy
+  url: https://www.atb.com/company/privacy-and-security/
+- type: Support
+  url: https://www.atb.com/resources/contact-us/
 - type: GitHubOrganization
   url: https://github.com/ATBFinancial
 - type: LinkedIn

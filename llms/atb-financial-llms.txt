@@ -1,0 +1,29 @@
+# ATB Financial
+
+> ATB Financial (formerly Alberta Treasury Branches) is a financial institution and Crown corporation wholly owned by the Government of Alberta, established in 1938 and operating under the provincial ATB Financial Act rather than the federal Bank Act. Headquartered in Edmonton, it is Alberta's largest home-grown financial institution, with roughly C$64 billion in assets, 800,000+ customers, and 300+ branches across the province; deposits are guaranteed by the Province of Alberta rather than covered by CDIC.
+
+## API & Open-Finance Posture
+
+ATB Financial does NOT operate a public first-party developer portal or a documented public API surface. As of the 2026-07-23 review, `developer.atb.com` returns HTTP 404, `api.atb.com` returns 403, and no downloadable OpenAPI/Swagger specification was found. Canada's federal Consumer-Driven Banking framework (legislated via Budget 2024 and the Fall Economic Statement 2024, with the FCAC as overseer) is legislated but not yet operational, so consumer financial-data access to ATB is voluntary and aggregator-mediated — reached through third-party aggregators such as Finicity (by Mastercard) and Flinks rather than a direct bank API.
+
+## Company
+
+- [Website](https://www.atb.com): ATB Financial corporate and personal banking site.
+- [About](https://www.atb.com/about/): Institution identity, history, and profile.
+- [Blog](https://www.atb.com/personal/good-advice/): ATB "Good Advice" personal-finance content.
+- [Privacy and Security](https://www.atb.com/company/privacy-and-security/): Privacy and information-security posture.
+- [Contact / Support](https://www.atb.com/resources/contact-us/): Client service and support channels.
+
+## Developer
+
+- [GitHub Organization](https://github.com/ATBFinancial): ATB Financial GitHub org (no public repositories at time of review).
+- [LinkedIn](https://www.linkedin.com/company/atb-financial): ATB Financial company page.
+
+## Aggregator Access
+
+- [Finicity (Mastercard)](https://www.finicity.com): Supported-institution data access for ATB accounts and transactions.
+- [Flinks](https://flinks.com): Canadian aggregator listing ATB as a supported connection.
+
+## Metadata
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/atb-financial/refs/heads/main/apis.yml): Machine-readable API Evangelist index for this provider.
