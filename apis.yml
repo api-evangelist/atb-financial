@@ -18,6 +18,17 @@ description: >-
   operational. Consumer financial-data access to ATB today is therefore
   voluntary and aggregator-mediated — reached through third-party aggregators
   such as Finicity (by Mastercard) and Flinks rather than a direct bank API.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial-Services
