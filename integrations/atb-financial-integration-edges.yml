@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/atb-financial/integrations
+- https://n8n.io/integrations/atb-financial/
+- https://composio.dev/toolkits/atb-financial
+- https://monid.ai/tools/atb-financial
+checked:
+- https://composio.dev/toolkits/atb-financial
+- https://monid.ai/tools/atb-financial
+- https://n8n.io/integrations/atb-financial/
+- https://zapier.com/apps/atb-financial/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
